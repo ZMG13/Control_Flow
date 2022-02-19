@@ -63,5 +63,16 @@ fun inferredTypeOf(variable: Any) {
         //    - contains the letter C, print the string and say it contains C.
         //    - is empty, inform the user that it is empty.
         //    - otherwise print the string and say it doesn't contain A, B or C.
+
+        when
+        {
+            str.contains("A") -> println("$str contains A")
+            str.contains("B") -> println("$str contains B")
+            str.contains("C") -> println("$str contains C")
+            str.isEmpty() -> println("String is empty")
+            else -> {
+                println("$str does not contain A, B or C")
+            }
+        }
     }
 
