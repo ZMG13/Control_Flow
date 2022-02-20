@@ -26,7 +26,7 @@ fun minimumOf(number1: Long, number2: Long){
         print("number1 is less than number 2. ")
     }else {
         print("number1 is greater than number2.  ")
-    }
+    }// checks and sees with number is greater and outputs the result
 }
 
 fun rangeOf(number: Int){
@@ -34,11 +34,11 @@ fun rangeOf(number: Int){
     // The ranges are: (0 or below) (1 to 5), (6 to 10), (11 to 20), (21+)
     // For example, if the number was 7, print out a message saying that the number 7 falls into the range 6 to 10.
     when(number) {
-        in Int.MIN_VALUE..0 -> println("The number $number falls into the the range of 0 or below" )
+        in Int.MIN_VALUE..0 -> println("The number $number falls into the the range of 0 or below" )//min number less than 0
         in 1..5 -> println("The number $number falls into the range of 1 to 5")
-        in 6..10 -> println("The number $number falls into the range of 6 to 10")
+        in 6..10 -> println("The number $number falls into the range of 6 to 10")//numbers between 1 and 20 are grouped
         in 11..20 -> println("The number $number falls into the range of 11 to 20")
-        in 21..Int.MAX_VALUE -> println("The number $number falls into the the range of 21 or greater" )
+        in 21..Int.MAX_VALUE -> println("The number $number falls into the the range of 21 or greater" )//max value greater than 21
     }
 }
 
@@ -49,11 +49,11 @@ fun inferredTypeOf(variable: Any) {
     // When the data type is not Int, Long, Double, Float or Boolean, print that the data type is something else.
 
     when (variable) {
-        is Int -> println("My inferred type is Int")
-        is Long -> println("My inferred type is Long")
-        is Double -> println("My inferred type is Double")
-        is Float -> println("My inferred type is Float")
-        is Boolean -> println("My inferred type is Boolean")
+        is Int -> println("My inferred type is Int")//checks if variable is int
+        is Long -> println("My inferred type is Long")//checks if variable is long
+        is Double -> println("My inferred type is Double")//checks if variable is double
+        is Float -> println("My inferred type is Float")//checks if variable is float
+        is Boolean -> println("My inferred type is Boolean")//checks if variable is boolean
     }}
 
     fun stringContains(str: String) {
@@ -66,12 +66,12 @@ fun inferredTypeOf(variable: Any) {
 
         when
         {
-            str.contains("A") -> println("$str contains A")
-            str.contains("B") -> println("$str contains B")
-            str.contains("C") -> println("$str contains C")
-            str.isEmpty() -> println("String is empty")
+            str.contains("A") -> println("$str contains A")//if string contains A outputs message
+            str.contains("B") -> println("$str contains B")//if string contains B outputs message
+            str.contains("C") -> println("$str contains C")//if string contains C outputs message
+            str.isEmpty() -> println("String is empty")// if string is empty outputs message
             else -> {
-                println("$str does not contain A, B or C")
+                println("$str does not contain A, B or C")// string has a different character
             }
         }
     }
